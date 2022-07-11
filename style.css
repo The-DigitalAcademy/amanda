@@ -57,7 +57,7 @@ input[type='number'] {
 
 .btn {
   cursor: pointer;
-  background-color: hsl(124, 88%, 49%);
+  background-color: hwb(60 6% 8%);
   box-shadow: var(--box-shadow);
   color: #fff;
   border: 0;
@@ -91,11 +91,11 @@ input[type='number'] {
 }
 
 .list li.plus {
-  border-right: 5px solid #2ecc71;
+  border-right: 5px solid hsl(62, 88%, 47%);
 }
 
 .list li.minus {
-  border-right: 5px solid #c0392b;
+  border-right: 5px solid #ebee0b;
 }
 
 .delete-btn {
