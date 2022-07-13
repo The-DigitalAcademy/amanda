@@ -14,9 +14,9 @@ const localStorageTransactions = JSON.parse(
 let transactions =
   localStorage.getItem('transactions') !== null ? localStorageTransactions : [];
 
-// // Add transaction
-// function addTransaction(e) {
-//   e.preventDefault();
+// Add transaction
+function addTransaction(e) {
+  e.preventDefault();
 
 //   if (text.value.trim() === '' || amount.value.trim() === '') {
 //     alert('Please add a text and amount');
