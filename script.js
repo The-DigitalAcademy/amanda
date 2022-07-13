@@ -27,23 +27,23 @@ function addTransaction(e) {
       amount: +amount.value
     };
 
-//     transactions.push(transaction);
+    transactions.push(transaction);
 
-//     addTransactionDOM(transaction);
+    addTransactionDOM(transaction);
 
-//     updateValues();
+    updateValues();
 
-//     updateLocalStorage();
+    updateLocalStorage();
 
-//     text.value = '';
-//     amount.value = '';
-//   }
-// }
+    text.value = '';
+    amount.value = '';
+  }
+}
 
-// // Generate random ID
-// function generateID() {
-//   return Math.floor(Math.random() * 100000000);
-// }
+// Generate random ID
+function generateID() {
+  return Math.floor(Math.random() * 100000000);
+}
 
 // // Add transactions to DOM list
 // function addTransactionDOM(transaction) {
