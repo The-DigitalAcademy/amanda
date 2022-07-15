@@ -6,7 +6,6 @@ const form = document.getElementById('form');
 const text = document.getElementById('text');
 const amount = document.getElementById('amount');
 
-
 const localStorageTransactions = JSON.parse(
   localStorage.getItem('transactions')
 );
@@ -14,7 +13,6 @@ const localStorageTransactions = JSON.parse(
 let transactions =
   localStorage.getItem('transactions') !== null ? localStorageTransactions : [];
 
-// Add transaction
 function addTransaction(e) {
   e.preventDefault();
 
@@ -58,8 +56,9 @@ function addTransactionDOM(transaction) {
   item.innerHTML = `
     ${transaction.text} <span>${sign}${Math.abs(
     transaction.amount
-
-  })">x</button>
+  // )}</span> <button class="delete-btn" onclick="removeTransaction(${
+  //   transaction.id
+  // })">x</button>
   `;
 
   list.appendChild(item);
