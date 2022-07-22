@@ -19,22 +19,22 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.container {
+.transaction-container {
+  overflow-y: scroll;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  border: solid 1px #525252;
+}
+
+.container { 
   margin: 30px auto;
   width: 350px;
 }
 
-.app {
-  background-color: white;
-  height: 800px;
-  width: 500px;
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  text-align: center;
-  border-radius: 1rem;
-  border: solid 1px white;
+
 }
 
 h1 {
@@ -93,7 +93,7 @@ label {
 
 input[type='text'],
 input[type='number'] {
-  border: 1px solid #dedede;
+  border: 1px solid #e26f6f;
   border-radius: 2px;
   display: block;
   font-size: 16px;
@@ -126,7 +126,7 @@ input[type='number'] {
 }
 
 .list li {
-  background-color: #fff;
+  background-color: rgb(254, 253, 253);
   box-shadow: var(--box-shadow);
   color: #333;
   display: flex;
